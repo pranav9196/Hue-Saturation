@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid p0">
+    <div class="row m0">
+      <div class="col-sm-3 p0 purple">
+        <div class="name text-center">
+          Name
+        </div>
+        <div class="dark-purple-wrapper">
+          <div class="annotation-button text-center">Toggle Annotation</div>
+
+          <p class="heading">Image Controls</p>
+          <div class="controls-wrapper">
+            <div class="control">
+              <label>Contrast</label>
+              <div>
+                <span>
+                  <input type="range" oninput="set('contrast', this.valueAsNumber);" value="0" step="0.1" min="0" max="10">
+                </span>
+              </div>
+            </div>
+            <div class="control">
+              <label>Brightness</label>
+              <div>
+                <span>
+                  <input type="range" oninput="set('brightness', this.valueAsNumber);" value="0" step="0.1" min="0" max="10">
+                </span>
+              </div>
+            </div>
+            <div class="control">
+              <label>Color Channel</label>
+              <div>
+                <span>
+                  <input type="range" oninput="set('hue-rotate', this.value + 'deg');" value="0" step="30" min="0" max="360">
+                </span>
+              </div>
+            </div>
+          </div>
+          <p class="heading">Patient Information</p>
+          <div class="patient-info-wrapper">
+            <div>Text</div>
+            <div>Text</div>
+            <div>Text</div>
+            <div>Text</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9">
+        <div class="header">
+          <div class="left-right pull-left">
+            <span class="fa fa-angle-left fa-2x"></span>
+            <span class="fa fa-angle-right fa-2x"></span>
+          </div>
+          <div class="search pull-left">
+            <span class="fa fa-search"></span>
+            <input type="text" placeholder="Search">
+          </div>
+
+          <div class="user-icons pull-right">
+            <span class="fa fa-refresh"></span>
+            <span>
+              <img src="assets/images/bell.png">
+            </span>
+            <span class="user-name">User Name</span>
+            <span class="fa fa-angle-down"></span>
+          </div>
+        </div>
+        <div class="image-container text-center">
+          <img id="pic" src="assets/images/flowers.jpeg">
+        </div>
+        <div class="row">
+          <div class="toggle-wrapper">
+            <span class="toggle-button text-center">Text1</span>
+            <span class="toggle-button green text-center">Text1</span>
+          </div>
+        </div>
+        <div class="text-container">
+          <div class="text-wrap pull-left">
+            <div>String:String</div>
+            <div>String:String</div>
+            <div>String:String</div>
+          </div>
+          <div class="pull-right text-1">
+            <div class="toggle-wrapper">
+              <span class="toggle-button text-center">Agree</span>
+              <span class="toggle-button green text-center">Disagree</span>
+            </div>
+          </div>
+        </div>
+        <div class="print-report">
+          <span class="toggle-button text-center pull-right">Print Report</span>
+        </div>
+        <p class="orange-button text-center pull-left">Text Text</p>
+        <p class=" some-text pull-right">Some Text Here</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- font-awesome -->
+  <script src="https://use.fontawesome.com/f765dbafd0.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
